@@ -15,15 +15,18 @@ import javax.swing.JPanel;
  * changed/queried under program control.
  * @author Koffman and Wolfgang
  **/
+@SuppressWarnings("serial")
 public class TwoDimGrid extends JPanel implements GridColors {
 
     // Data Fields
     /** Prefered button size */
     private static final int PREFERED_BUTTON_SIZE = 60;
     /** Default number of rows */
-    private static final int DEFAULT_COLS = 20;
+    @SuppressWarnings("unused")
+	private static final int DEFAULT_COLS = 20;
     /** Default number of columns */
-    private static final int DEFAULT_ROWS = 20;
+    @SuppressWarnings("unused")
+	private static final int DEFAULT_ROWS = 20;
     /** A two dimensional grid of buttons */
     private JButton[][] theGrid;
     /** Number of rows */
